@@ -59,8 +59,8 @@
 	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
 
 	 <!-- Compiled and minified CSS materialize -->
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-
+<!--   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+ -->
 	<!--[if IE]>
 		<link rel="stylesheet" type="text/css" href="css/all-ie-only.css" />
 	<![endif]-->
@@ -85,11 +85,55 @@
 			</div>
 		</div>
 	</div><!-- Loader /- -->
-	
+	<div id="test-popup" class="white-popup mfp-hide">
+  		<!-- Appointment Form -->
+						<form class="appoinment-form">
+							<h3><img src="images/appoinment.png" alt="appoinment"/>Log In</h3>
+							<div class="form-group col-md-12 no-padding">							
+								<input type="text" id="your-name" class="form-control" placeholder="Your Name">
+							</div>					
+							<div class="form-group col-md-12 no-padding">							
+								<input type="email" id="email" class="form-control" placeholder="Email Address">
+							</div>
+							<div class="form-group input-group col-md-12 no-padding">
+								<div class="col-md-7 no-padding">
+									<div class="col-md-6 col-sm-4 col-xs-4 no-left-padding">
+										<select class="form-control">
+											<option>Day</option>
+											<option>Sunday</option>
+											<option>Monday</option>
+										</select>
+									</div>
+									<div class="col-md-6 col-sm-4 col-xs-4 no-left-padding">
+										<select class="form-control">
+											<option>Time</option>
+											<option>AM</option>
+											<option>PM</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-5 col-sm-4 col-xs-4 no-padding">
+									<select class="form-control">
+										<option>Doctor Name</option>
+										<option>Mr.XYZ</option>
+										<option>Mr.ABC</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group col-md-12 col-sm-12 col-xs-12 no-padding">							
+								<textarea rows="4" id="textarea_message" class="form-control" placeholder="Your Message..."></textarea>
+							</div>
+							<div class="form-group col-md-12 col-sm-12 col-xs-12 no-padding">
+								<input type="checkbox"><span>Send Email Notification</span>							
+								<button type="submit" id="btn_submit" class="btn-submit pull-right">
+								<img src="images/heart-sm.png" alt="heart-sm">Submit</button>
+							</div>
+						</form><!-- Appointment Form /- -->
+	</div>
 	<a id="top"></a>
 	<!-- Main Container -->
-	<div class="col-md-9" style="padding: 0; border-right: 2px solid #33a9ee;">
-		<!-- Header -->
+	<div class="col-md-9 " style="padding: 0; ">
+	<!-- Header -->
 		<header class="header-main">
 			<!-- Top Header -->
 			<div class="top-header container-fluid no-padding">
@@ -103,10 +147,10 @@
 							<ul>
 								<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>	
 								<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-								
+								<li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" title="Tumblr"><i class="fa fa-tumblr"></i></a></li>
 							</ul>
-							<!-- <a href="#" title="Book Appointment"><span>+</span>Login</a>
-							<a href="#" title="Book Appointment"><span>+</span>Register</a> -->
 						</div>
 					</div>
 				</div><!-- container /- -->
@@ -116,90 +160,171 @@
 				<!-- Container -->
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3 logo-block pull-left">
+						<div class="col-md-4 logo-block pull-left">
 							<a href="#" title="Logo"><img src="images/logo.png" alt="Logo" /></a>
 						</div>
-						<div class="col-md-9 text-right pull-right">
+						<div class="col-md-4 text-center ">
 							<div class="location">
 								<h3><img src="images/location-ic.png" alt="Location" /> Our Location</h3>
 								<p>E44 - Web Corner, Melbourne - 18</p>
 							</div>
+							
+						</div>
+						<div class="col-md-4 text-right pull-right">
 							<div class="phone">
-								<h3><img src="images/phone-ic.png" alt="phone" /> (+1)800 433 633</h3>
-								<p>Call Us Now- 24/7 Customer Support</p>
+								<h3 class="head-h3"><img src="images/phone-ic.png" alt="phone" /> (+1)800 433 633</h3>
+								<p>Call Us Now- 24/7 Support</p>
 							</div>
 						</div>
 					</div>
 				</div><!-- Container -->
 			</div><!-- Logo Block /- -->
-
+			
 		</header>
-	
-		<!-- Banner Section -->
-		<div id="home-banner" class="container-fluid no-padding banner-section home-banner">
-			<!-- Container -->
-			<div class="container">			
-				<div id="main-carousel" class="carousel slide" data-ride="carousel">				
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<div class="col-md-6 col-sm-6 no-padding">
-								<div class="banner-left">
-									<span>The Best Hospitality WP Theme Forever!</span>
-									<h3>we care for your health</h3>
-									<p>Qualified Staff With Expertise in Services We Offer for more Resonable cost with love, Just explore about More!</p>
-									<a href="#">View Our Services<i class="fa fa-plus"></i></a>
-								</div>
+
+		<div class="col-md-12 col-sm-12 departments no-padding">
+				<div class="departments-bg">
+					<img src="images/departments-bg.jpg" alt="departments-bg"/>
+				</div>
+				<div class="section-header">
+					<h3 style="text-align: center; ">Lorem Ipsum</h3>				
+				</div>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading1">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-1" aria-expanded="true">
+									Ophthalmology Clinic<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="dept-heading1">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
 							</div>
-							<div class="col-md-6 col-sm-6 no-padding">
-								<div class="banner-right">
-									<img src="images/banner-main.png" alt="banner-main"/>
-								</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
 							</div>
 						</div>
-						<div class="item">
-							<div class="col-md-6 col-sm-6 no-padding">
-								<div class="banner-left">
-									<span>The Best Hospitality WP Theme Forever!</span>
-									<h3>we care for your health</h3>
-									<p>Qualified Staff With Expertise in Services We Offer for more Resonable cost with love, Just explore about More!</p>
-									<a href="#">View Our Services<i class="fa fa-plus"></i></a>
-								</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading2">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-2" aria-expanded="false">
+									Cardiac Clinic<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading2">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
 							</div>
-							<div class="col-md-6 col-sm-6 no-padding">
-								<div class="banner-right">
-									<img src="images/banner-main.png" alt="banner-main"/>
-								</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading3">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-3" aria-expanded="false">
+									Outpatient Surgery<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading3">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+							</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading4">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-4" aria-expanded="false">
+									Pediatric Clinic<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading4">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+							</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading5">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-5" aria-expanded="false">
+									Gynaecological Clinic<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading5">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+							</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading6">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-6" aria-expanded="false">
+									Ophthalmology Clinic<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading6">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+							</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
 							</div>
 						</div>
 					</div>
 				</div>
-			</div><!-- Container /- -->
-	</div>
+			</div>
+			
+
+	
 	</div><!-- Main Container -->
-	<div class="col-md-3 sidebar" style="padding: 0;">
-		<header class="header-main">
+	<div class="col-md-3 sidebar" style="padding: 0; border-left: 2px solid #33a9ee;">
+		<header class="header-main navbar">
 	
 			<div class="main-chat-header">
 			
-				<a class="main-button-s" href="#" title="Book Appointment"><span>+</span>Login</a>
-							<a class="main-button-s" href="#" title="Book Appointment"><span>+</span>Register</a>			
+				<a class="main-button-s open-popup-link" href="#test-popup" title="Book Appointment"><span>+</span>Login</a>
+							<a class="main-button-s " href="#" title="Book Appointment"><span>+</span>Register</a>			
 			</div>
 			<ul class="main-chat-list">
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
+				
 				
 							
 				
@@ -243,5 +368,13 @@
 
 	 <!-- Compiled and minified JavaScript materialize -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script>
+  	$(document).ready(function(){
+		$('.open-popup-link').magnificPopup({
+  		type:'inline',
+  		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+});
+  	});
+  </script>
 </body>
 </html>
