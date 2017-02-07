@@ -2718,3 +2718,7 @@
 		padding-right: 0;
 	}
 }
+
+.main-container{
+	width: 100% !important;
+}
