@@ -3,7 +3,7 @@
 <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="" style="overflow: hidden;"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 
@@ -29,6 +29,7 @@
 	
 	<!-- Library - Loader CSS -->
 	<link rel="stylesheet" type="text/css" href="libraries/loader/loaders.min.css">
+
 
 	<!-- Library - Google Font Familys -->
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -76,7 +77,8 @@
     <![endif]-->
 </head>
 
-<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation" style="overflow: hidden; 
+    background: #EEF5FC;">
 	<!-- Loader -->
 	<div id="site-loader" class="load-complete">
 		<div class="loader">
@@ -86,7 +88,7 @@
 		</div>
 	</div><!-- Loader /- -->
 	<div id="test-popup" class="white-popup mfp-hide">
-  		<!-- Appointment Form -->
+  		<!-- Log in form -->
 						<form class="appoinment-form">
 							<h3><img src="images/appoinment.png" alt="appoinment"/>Log In</h3>
 							<div class="form-group col-md-12 no-padding">							
@@ -128,7 +130,7 @@
 								<button type="submit" id="btn_submit" class="btn-submit pull-right">
 								<img src="images/heart-sm.png" alt="heart-sm">Submit</button>
 							</div>
-						</form><!-- Appointment Form /- -->
+						</form><!-- log in form /- -->
 	</div>
 	<a id="top"></a>
 	<!-- Main Container -->
@@ -143,14 +145,9 @@
 						<div class="col-md-6">
 							<p>We believe every interaction with our patients is an opportunity!</p>
 						</div>
-						<div class="col-md-6 text-right" style="margin-top: 5px;">
-							<ul>
-								<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>	
-								<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#" title="Tumblr"><i class="fa fa-tumblr"></i></a></li>
-							</ul>
+						<div class="col-md-6 text-right" style="">
+							<a class="main-button-s open-popup-link" href="#test-popup" title="Book Appointment"><span>+</span>Login</a>
+							<a class="main-button-s " href="#" title="Book Appointment"><span>+</span>Register</a>
 						</div>
 					</div>
 				</div><!-- container /- -->
@@ -182,154 +179,149 @@
 			
 		</header>
 
-		<div class="col-md-12 col-sm-12 departments no-padding">
-				<div class="departments-bg">
-					<img src="images/departments-bg.jpg" alt="departments-bg"/>
-				</div>
-				<div class="section-header">
-					<h3 style="text-align: center; ">Lorem Ipsum</h3>				
-				</div>
-				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="dept-heading1">
-							<h4 class="panel-title">
-								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-1" aria-expanded="true">
-									Ophthalmology Clinic<i class="fa fa-plus pull-right"></i>
-								</a>
-							</h4>
-						</div>
-						<div id="dept-type-1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="dept-heading1">
-							<div class="panel-img">
-								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+			<div class="col-md-12 col-sm-12 departments no-padding">
+						
+						<!-- <div class="member-content">
+							<div class="member-name">
+								<h6>Dr.Adaline Becka</h6>
+								<p>Dental Specialist</p>
 							</div>
-							<div class="panel-body">
-								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
-								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							<div class="member-contact">
+								<a title="Phone" href="#"><img src="images/ftr-phone.png" alt="Phone" /></a>
+								<a title="Mail" href="#"><img src="images/ftr-email.png" alt="Email" /></a>
 							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="dept-heading2">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-2" aria-expanded="false">
-									Cardiac Clinic<i class="fa fa-plus pull-right"></i>
-								</a>
-							</h4>
-						</div>
-						<div id="dept-type-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading2">
-							<div class="panel-img">
-								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+						</div> -->
+						<!-- Call Out -->
+				<div id="call-out" class="container-fluid no-padding call-out">
+					<!-- Container -->
+					<div class="container">
+						<div class="call-out-content row">
+							<div class="col-md-9 col-sm-9 col-xs-12">
+								<h3>Dr. <span>John Doe</span></h3>
+								<p>Blanditiis praesentium voluptatum deleniti atque  soluta nobis </p>
 							</div>
-							<div class="panel-body">
-								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
-								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							<div class="col-md-3 col-sm-3 col-xs-12">
+								<a href="#" style="margin-top: 10px;" title="Purchase Now">Purchase Now</a>
 							</div>
 						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="dept-heading3">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-3" aria-expanded="false">
-									Outpatient Surgery<i class="fa fa-plus pull-right"></i>
-								</a>
-							</h4>
-						</div>
-						<div id="dept-type-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading3">
-							<div class="panel-img">
-								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+					</div><!-- Container /- -->
+				</div><!-- Call Out /- -->
+				<div id="call-out" class="container-fluid no-padding call-out">
+					<!-- Container -->
+					<div class="container">
+						<div class="call-out-content row">
+							<div class="col-md-9 col-sm-9 col-xs-12">
+								<h3>Dr. <span>John Doe</span></h3>
+								<p>Blanditiis praesentium voluptatum deleniti atque  soluta nobis </p>
 							</div>
-							<div class="panel-body">
-								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
-								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							<div class="col-md-3 col-sm-3 col-xs-12">
+								<a href="#" style="margin-top: 10px;" title="Purchase Now">Purchase Now</a>
 							</div>
 						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="dept-heading4">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-4" aria-expanded="false">
-									Pediatric Clinic<i class="fa fa-plus pull-right"></i>
-								</a>
-							</h4>
-						</div>
-						<div id="dept-type-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading4">
-							<div class="panel-img">
-								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+					</div><!-- Container /- -->
+				</div><!-- Call Out /- -->
+				<div id="call-out" class="container-fluid no-padding call-out">
+					<!-- Container -->
+					<div class="container">
+						<div class="call-out-content row">
+							<div class="col-md-9 col-sm-9 col-xs-12">
+								<h3>Dr. <span>John Doe</span></h3>
+								<p>Blanditiis praesentium voluptatum deleniti atque  soluta nobis </p>
 							</div>
-							<div class="panel-body">
-								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
-								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							<div class="col-md-3 col-sm-3 col-xs-12">
+								<a href="#" style="margin-top: 10px;" title="Purchase Now">Purchase Now</a>
 							</div>
 						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="dept-heading5">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-5" aria-expanded="false">
-									Gynaecological Clinic<i class="fa fa-plus pull-right"></i>
-								</a>
-							</h4>
-						</div>
-						<div id="dept-type-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading5">
-							<div class="panel-img">
-								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+					</div><!-- Container /- -->
+				</div><!-- Call Out /- -->
+				<div id="call-out" class="container-fluid no-padding call-out">
+					<!-- Container -->
+					<div class="container">
+						<div class="call-out-content row">
+							<div class="col-md-9 col-sm-9 col-xs-12">
+								<h3>Dr. <span>John Doe</span></h3>
+								<p>Blanditiis praesentium voluptatum deleniti atque  soluta nobis </p>
 							</div>
-							<div class="panel-body">
-								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
-								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							<div class="col-md-3 col-sm-3 col-xs-12">
+								<a href="#" style="margin-top: 10px;" title="Purchase Now">Purchase Now</a>
 							</div>
 						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="dept-heading6">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-6" aria-expanded="false">
-									Ophthalmology Clinic<i class="fa fa-plus pull-right"></i>
-								</a>
-							</h4>
-						</div>
-						<div id="dept-type-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading6">
-							<div class="panel-img">
-								<img src="images/panel-img-1.jpg" alt="panel-img"/>
-							</div>
-							<div class="panel-body">
-								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
-								<a href="#">More Details<i class="fa fa-plus"></i></a>							
-							</div>
-						</div>
-					</div>
-				</div>
+					</div><!-- Container /- -->
+				</div><!-- Call Out /- -->
 			</div>
 			
 
 	
 	</div><!-- Main Container -->
-	<div class="col-md-3 sidebar" style="padding: 0; border-left: 2px solid #33a9ee;">
-		<header class="header-main navbar">
-	
-			<div class="main-chat-header">
-			
-				<a class="main-button-s open-popup-link" href="#test-popup" title="Book Appointment"><span>+</span>Login</a>
-							<a class="main-button-s " href="#" title="Book Appointment"><span>+</span>Register</a>			
-			</div>
-			<ul class="main-chat-list">
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				<a class="main-chat-link" href="#"><li><img class="main-chat-thumb" src="images/doctoricon.png"><span>Dentist (12)</span><button type="button" style="float: right;" class="btn btn-success btn-circle"><i class="glyphicon glyphicon-link"></i></button></li></a>
-				
-				
-							
-				
-				
-			</ul>
+	<div class="col-md-3 sidebar" style="padding: 0;">
+		<header class="header-main navbar">	
+			<!-- <div class="main-chat-header">
+				<h4 style="color: #636363; margin-left: 14px;">Category</h4>			
+			</div> -->
+			<a href="#"><div class="member-content" style="">
+				<div class="member-name">
+					<h6>DENTIST</h6>
+					<p>Dental Specialist</p>
+				</div>
+				<div class="member-contact">
+					<span class="green-indicator"></span>
+				</div>
+			</div></a>
+			<a href="#"><div class="member-content" style="">
+				<div class="member-name">
+					<h6>Orthopaedist</h6>
+					<p>Orthopaedist Specialist</p>
+				</div>
+				<div class="member-contact">
+					<span class="green-indicator"></span>
+				</div>
+			</div></a>
+			<a href="#"><div class="member-content" style="">
+				<div class="member-name">
+					<h6>Orthopaedist</h6>
+					<p>Orthopaedist Specialist</p>
+				</div>
+				<div class="member-contact">
+					<span class="red-indicator"></span>
+				</div>
+			</div></a>
+			<a href="#"><div class="member-content" style="">
+				<div class="member-name">
+					<h6>cardiologist</h6>
+					<p>cardiologist Specialist</p>
+				</div>
+				<div class="member-contact">
+					<span class="green-indicator"></span>
+				</div>
+			</div></a>
+			<a href="#"><div class="member-content" style="">
+				<div class="member-name">
+					<h6>Orthopaedist</h6>
+					<p>Orthopaedist Specialist</p>
+				</div>
+				<div class="member-contact">
+					<span class="red-indicator"></span>
+				</div>
+			</div></a>
+			<a href="#"><div class="member-content" style="">
+				<div class="member-name">
+					<h6>Orthopaedist</h6>
+					<p>Orthopaedist Specialist</p>
+				</div>
+				<div class="member-contact">
+					<span class="green-indicator"></span>
+				</div>
+			</div></a>
+			<a href="#"><div class="member-content" style="">
+				<div class="member-name">
+					<h6>Orthopaedist</h6>
+					<p>Orthopaedist Specialist</p>
+				</div>
+				<div class="member-contact">
+					<span class="green-indicator"></span>
+				</div>
+			</div></a>
+
 		</header>
 	</div>
 	
@@ -369,12 +361,13 @@
 	 <!-- Compiled and minified JavaScript materialize -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <script>
-  	$(document).ready(function(){
-		$('.open-popup-link').magnificPopup({
-  		type:'inline',
-  		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-});
-  	});
+  		$(document).ready(function(){
+			$('.open-popup-link').magnificPopup({
+  			type:'inline',
+  			midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide 	alternative source in href.
+			});
+			$('[data-toggle="tooltip"]').tooltip();  
+  		});
   </script>
 </body>
 </html>
