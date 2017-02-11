@@ -982,7 +982,7 @@ ul.main-chat-list li:hover {
 }
 .departments {
     padding-right: 10px !important;
-    padding-top: 30px !important;
+    padding-top: 0px !important;
     padding-bottom: 146px;
     background: #EEF5FC;
     min-height: 100vh;
@@ -1016,12 +1016,14 @@ a.main-chat-button {
 
 ::-webkit-scrollbar-track
 {
-  background: rgba(0, 0, 0, 0.1);
+  /*background: rgba(0, 0, 0, 0.1);*/
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb
 {
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(0, 0, 0, 0.5);*/
+  background: transparent;
 }
 .member-content {
     position: relative !important;
@@ -1062,11 +1064,23 @@ a.main-chat-button {
     background-size: cover;
     background-position: -480px !important;
     margin: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*/}
 .call-out-content {
     padding: 40px 0 !important;
 }
 .member-content:hover {
     background-color: #337ab7;
 }
+
+.fa-phone{
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 15px 18px;
+    font-size: 20px;
+    color: #3FADEE;
+    margin-top: 10px;
+}
+
+ 
