@@ -1141,3 +1141,8 @@ a.main-chat-button {
 		display: none !important;
 	}
 }
+@media screen and (max-width: 394px ){
+	.col-md-6.text-right.top-head-butt a {
+    	padding: 10px 60px !important;
+	}
+}
