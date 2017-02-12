@@ -37,7 +37,7 @@
 	background-size: cover;
 	background-repeat: repeat;
 	position: relative;
-	padding-top: 100px;	
+	/*padding-top: 100px;	*/
 }
 .home-banner::before {
 	position: absolute;
@@ -69,7 +69,7 @@
 	display: inline-block;
 	width: 100%;
 	text-align: center;
-	padding-top: 205px;
+	padding-top: 100px;
 	position: relative;
 }
 .banner-left::before {

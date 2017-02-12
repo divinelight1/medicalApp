@@ -1044,7 +1044,7 @@ a.main-chat-button {
     background: #00ff00;
     position: absolute;
     border-radius: 10px;
-    box-shadow: #636363 0 -1px 6px 1px, inset #636363 0 -1px 0px, #7D0 0 2px 0px;
+    box-shadow: #636363 0 -1px 6px 2px, inset #636363 0 -1px 1px, #7D0 0 0px 0px;
 }
 .red-indicator{
 	top: 14px;
@@ -1053,7 +1053,7 @@ a.main-chat-button {
     background: #ff0000;
     position: absolute;
     border-radius: 10px;
-    box-shadow: #636363 0 -1px 6px 1px, inset #636363 0 -1px 0px, #7D0 0 2px 0px;
+    box-shadow: #636363 0 -1px 6px 2px, inset #636363 0 -1px 1px, #7D0 0 0px 0px;
 }
 .call-out {
     background: url(../images/call-out-bg.jpg);
@@ -1083,4 +1083,8 @@ a.main-chat-button {
     margin-top: 10px;
 }
 
- 
+.doctor-lang{
+	width: 25px;
+    margin-top: -5px;
+    margin-right: 20px;
+}

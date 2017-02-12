@@ -131,6 +131,53 @@
 								<img src="images/heart-sm.png" alt="heart-sm">Submit</button>
 							</div>
 						</form><!-- log in form /- -->
+
+	</div>
+	<div id="product-form" class="white-popup mfp-hide">
+  		<!-- Log in form -->
+						<form class="appoinment-form">
+							<h3><img src="images/appoinment.png" alt="appoinment"/>Log In</h3>
+							<div class="form-group col-md-12 no-padding">							
+								<input type="text" id="your-name" class="form-control" placeholder="Your Name">
+							</div>					
+							<div class="form-group col-md-12 no-padding">							
+								<input type="email" id="email" class="form-control" placeholder="Email Address">
+							</div>
+							<div class="form-group input-group col-md-12 no-padding">
+								<div class="col-md-7 no-padding">
+									<div class="col-md-6 col-sm-4 col-xs-4 no-left-padding">
+										<select class="form-control">
+											<option>Day</option>
+											<option>Sunday</option>
+											<option>Monday</option>
+										</select>
+									</div>
+									<div class="col-md-6 col-sm-4 col-xs-4 no-left-padding">
+										<select class="form-control">
+											<option>Time</option>
+											<option>AM</option>
+											<option>PM</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-5 col-sm-4 col-xs-4 no-padding">
+									<select class="form-control">
+										<option>Doctor Name</option>
+										<option>Mr.XYZ</option>
+										<option>Mr.ABC</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group col-md-12 col-sm-12 col-xs-12 no-padding">							
+								<textarea rows="4" id="textarea_message" class="form-control" placeholder="Your Message..."></textarea>
+							</div>
+							<div class="form-group col-md-12 col-sm-12 col-xs-12 no-padding">
+								<input type="checkbox"><span>Send Email Notification</span>							
+								<button type="submit" id="btn_submit" class="btn-submit pull-right">
+								<img src="images/heart-sm.png" alt="heart-sm">Submit</button>
+							</div>
+						</form><!-- log in form /- -->
+						
 	</div>
 	<a id="top"></a>
 	<!-- Main Container -->
@@ -204,7 +251,7 @@
 								<p>Blanditiis praesentium voluptatum deleniti atque  soluta nobis </p>
 							</div>
 							<div style="text-align: right;" class="col-md-3 col-sm-3 col-xs-12">
-								<a href="#"><i class="fa fa-phone"></i></a>
+								<img data-toggle="tooltip" title="Deutch" class="doctor-lang"  src="images/flaggerman.png"><a class="product-popup" href="#product-form"><i class="fa fa-phone"></i></a>
 							</div>
 						</div>
 					</div><!-- Container /- -->
@@ -218,7 +265,7 @@
 								<p>Blanditiis praesentium voluptatum deleniti atque  soluta nobis </p>
 							</div>
 							<div style="text-align: right;" class="col-md-3 col-sm-3 col-xs-12">
-								<a href="#"><i class="fa fa-phone"></i></a>
+								<img data-toggle="tooltip" title="Deutch" class="doctor-lang"  src="images/flaggerman.png"><a href="#"><i class="fa fa-phone"></i></a>
 							</div>
 						</div>
 					</div><!-- Container /- -->
@@ -232,7 +279,7 @@
 								<p>Blanditiis praesentium voluptatum deleniti atque  soluta nobis </p>
 							</div>
 							<div style="text-align: right;" class="col-md-3 col-sm-3 col-xs-12">
-								<a href="#"><i class="fa fa-phone"></i></a>
+								<img data-toggle="tooltip" title="Deutch" class="doctor-lang"  src="images/flaggerman.png"><a href="#"><i class="fa fa-phone"></i></a>
 							</div>
 						</div>
 					</div><!-- Container /- -->
@@ -246,7 +293,35 @@
 								<p>Blanditiis praesentium voluptatum deleniti atque  soluta nobis </p>
 							</div>
 							<div style="text-align: right;" class="col-md-3 col-sm-3 col-xs-12">
-								<a href="#"><i class="fa fa-phone"></i></a>
+								<img data-toggle="tooltip" title="Deutch" class="doctor-lang"  src="images/flaggerman.png"><a href="#"><i class="fa fa-phone"></i></a>
+							</div>
+						</div>
+					</div><!-- Container /- -->
+				</div><!-- Call Out /- -->
+				<div  id="call-out" class="container-fluid no-padding call-out">
+					<!-- Container -->
+					<div class="container">
+						<div class="call-out-content row">
+							<div class="col-md-9 col-sm-9 col-xs-12">
+								<h3>Dr. <span>John Doe</span></h3>
+								<p>Blanditiis praesentium voluptatum deleniti atque  soluta nobis </p>
+							</div>
+							<div style="text-align: right;" class="col-md-3 col-sm-3 col-xs-12">
+								<img data-toggle="tooltip" title="Deutch" class="doctor-lang"  src="images/flaggerman.png"><a href="#"><i class="fa fa-phone"></i></a>
+							</div>
+						</div>
+					</div><!-- Container /- -->
+				</div><!-- Call Out /- -->
+				<div  id="call-out" class="container-fluid no-padding call-out">
+					<!-- Container -->
+					<div class="container">
+						<div class="call-out-content row">
+							<div class="col-md-9 col-sm-9 col-xs-12">
+								<h3>Dr. <span>John Doe</span></h3>
+								<p>Blanditiis praesentium voluptatum deleniti atque  soluta nobis </p>
+							</div>
+							<div style="text-align: right;" class="col-md-3 col-sm-3 col-xs-12">
+								<img data-toggle="tooltip" title="Deutch" class="doctor-lang"  src="images/flaggerman.png"><a href="#"><i class="fa fa-phone"></i></a>
 							</div>
 						</div>
 					</div><!-- Container /- -->
@@ -370,6 +445,26 @@
   			type:'inline',
   			midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide 	alternative source in href.
 			});
+			// product popup
+			$('.product-popup').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+
+
 			$('[data-toggle="tooltip"]').tooltip();  
   		});
   </script>
