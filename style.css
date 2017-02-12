@@ -1123,6 +1123,15 @@ a.main-chat-button {
     	width: 28%;
     	margin-right: 10px;
 	}
+	.call-out-content.row p {
+    	display: none;
+	}
+	.call-out-content.row h3 {
+		text-align: center;
+	}
+	.call-out-content.row .col-xs-12 {
+    	text-align: center !important;
+	}
 }
 @media screen and (min-width: 768px){
 	.hide-on-wide{
