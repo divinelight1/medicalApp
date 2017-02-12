@@ -372,3 +372,20 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+.product-close{
+   width: 44px;
+  height: 44px;
+  line-height: 44px;
+  position: relative; !important;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  padding: 0 0 18px 10px;
+  color: #FFF;
+  font-style: normal;
+  font-size: 28px;
+  font-family: Arial, Baskerville, monospace;
+}
