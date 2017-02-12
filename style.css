@@ -1116,6 +1116,8 @@ a.main-chat-button {
 	.panel-body {
     	padding-left: 0 !important;
     	margin: 20px; auto;
+    	overflow: scroll;
+    	height: 180px;
 	}
 	.panel-body img {
     	width: 28%;
