@@ -133,51 +133,10 @@
 						</form><!-- log in form /- -->
 
 	</div>
-	<div id="product-form" class="white-popup mfp-hide">
-  		<!-- Log in form -->
-						<form class="appoinment-form">
-							<h3><img src="images/appoinment.png" alt="appoinment"/>Log In</h3>
-							<div class="form-group col-md-12 no-padding">							
-								<input type="text" id="your-name" class="form-control" placeholder="Your Name">
-							</div>					
-							<div class="form-group col-md-12 no-padding">							
-								<input type="email" id="email" class="form-control" placeholder="Email Address">
-							</div>
-							<div class="form-group input-group col-md-12 no-padding">
-								<div class="col-md-7 no-padding">
-									<div class="col-md-6 col-sm-4 col-xs-4 no-left-padding">
-										<select class="form-control">
-											<option>Day</option>
-											<option>Sunday</option>
-											<option>Monday</option>
-										</select>
-									</div>
-									<div class="col-md-6 col-sm-4 col-xs-4 no-left-padding">
-										<select class="form-control">
-											<option>Time</option>
-											<option>AM</option>
-											<option>PM</option>
-										</select>
-									</div>
-								</div>
-								<div class="col-md-5 col-sm-4 col-xs-4 no-padding">
-									<select class="form-control">
-										<option>Doctor Name</option>
-										<option>Mr.XYZ</option>
-										<option>Mr.ABC</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group col-md-12 col-sm-12 col-xs-12 no-padding">							
-								<textarea rows="4" id="textarea_message" class="form-control" placeholder="Your Message..."></textarea>
-							</div>
-							<div class="form-group col-md-12 col-sm-12 col-xs-12 no-padding">
-								<input type="checkbox"><span>Send Email Notification</span>							
-								<button type="submit" id="btn_submit" class="btn-submit pull-right">
-								<img src="images/heart-sm.png" alt="heart-sm">Submit</button>
-							</div>
-						</form><!-- log in form /- -->
-						
+	<div id="product-form" class=" product-popup-div  mfp-hide">
+  		<div class="">
+  			
+  		</div>					
 	</div>
 	<a id="top"></a>
 	<!-- Main Container -->
@@ -206,17 +165,17 @@
 				<!-- Container -->
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 logo-block pull-left">
+						<div class="col-md-4 logo-block pull-left ">
 							<a href="#" title="Logo"><img src="images/logo.png" alt="Logo" /></a>
 						</div>
-						<div class="col-md-4 text-center ">
+						<div class="col-md-4 text-center hide-on-mobile">
 							<div class="location">
 								<h3><img src="images/location-ic.png" alt="Location" /> Our Location</h3>
 								<p>E44 - Web Corner, Melbourne - 18</p>
 							</div>
 							
 						</div>
-						<div class="col-md-4 text-right pull-right">
+						<div class="col-md-4 text-right pull-right hide-on-mobile">
 							<div class="phone">
 								<h3 class="head-h3"><img src="images/phone-ic.png" alt="phone" /> (+1)800 433 633</h3>
 								<p>Call Us Now- 24/7 Support</p>
@@ -228,7 +187,7 @@
 			
 		</header>
 
-			<div class="col-md-12 col-sm-12 departments no-padding">
+			<div class="col-md-12 col-sm-12 departments no-padding hide-on-mobile">
 						
 						<!-- <div class="member-content">
 							<div class="member-name">
@@ -328,7 +287,105 @@
 				</div><!-- Call Out /- -->
 
 			</div>
-			
+			<div class="col-md-6 col-sm-12 departments no-padding hide-on-wide">
+				<div class="departments-bg">
+					<img src="images/departments-bg.jpg" alt="departments-bg"/>
+				</div>
+				
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading2">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-2" aria-expanded="false">
+									Cardiac Clinic<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading2">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+							</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading3">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-3" aria-expanded="false">
+									Outpatient Surgery<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading3">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+							</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading4">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-4" aria-expanded="false">
+									Pediatric Clinic<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading4">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+							</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading5">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-5" aria-expanded="false">
+									Gynaecological Clinic<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading5">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+							</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="dept-heading6">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#dept-type-6" aria-expanded="false">
+									Ophthalmology Clinic<i class="fa fa-plus pull-right"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="dept-type-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="dept-heading6">
+							<div class="panel-img">
+								<img src="images/panel-img-1.jpg" alt="panel-img"/>
+							</div>
+							<div class="panel-body">
+								<p>Blanditiis praesentium voluptatum delniti atque corrupti quos dlores quas molestias excepturi sint occaecati cupiditate non provident siili sunt in culpa qui officia deserunt.</p>
+								<a href="#">More Details<i class="fa fa-plus"></i></a>							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 	
 	</div><!-- Main Container -->
@@ -445,11 +502,13 @@
   			type:'inline',
   			midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide 	alternative source in href.
 			});
+
 			// product popup
 			$('.product-popup').magnificPopup({
 		type: 'inline',
 		preloader: false,
 		focus: '#name',
+		midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide 	alternative source in href.
 
 		// When elemened is focused, some mobile browsers in some cases zoom in
 		// It looks not nice, so we disable it:

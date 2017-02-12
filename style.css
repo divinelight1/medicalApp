@@ -1088,3 +1088,27 @@ a.main-chat-button {
     margin-top: -5px;
     margin-right: 20px;
 }
+.product-popup-div{
+	width: 60%;
+	height: 400px;
+	background: white;
+	margin: 0 auto;
+}
+/*responsive*/
+
+@media screen and (max-width: 767px){
+	.top-header.container-fluid.no-padding p {
+    	display: none;
+	}
+	/*.middle-header .container .row .logo-block {
+    	display: none;
+	}*/
+	.hide-on-mobile{
+		display: none !important;
+	}
+}
+@media screen and (min-width: 768px){
+	.hide-on-wide{
+		display: none !important;
+	}
+}
