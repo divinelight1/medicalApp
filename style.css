@@ -1090,7 +1090,7 @@ a.main-chat-button {
 }
 .product-popup-div{
 	width: 60%;
-	height: 400px;
+	/*height: 400px;*/
 	background: white;
 	margin: 0 auto;
 }
@@ -1131,6 +1131,9 @@ a.main-chat-button {
 	}
 	.call-out-content.row .col-xs-12 {
     	text-align: center !important;
+	}
+	img.doctor-lang {
+    	width: 40px;
 	}
 }
 @media screen and (min-width: 768px){
